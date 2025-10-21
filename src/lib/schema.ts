@@ -73,7 +73,7 @@ export const JazzCollabEditorAccount = co
         "profile",
         JazzCollabEditorProfile.create(
           {
-            name: "Anonymous user", // Default anonymous identity
+            name: "Anonymous", // Default anonymous identity
             bio: CoRichText.create(
               "<p>A <strong>hu<em>man</strong></em>.</p>", // Default bio content
               group
