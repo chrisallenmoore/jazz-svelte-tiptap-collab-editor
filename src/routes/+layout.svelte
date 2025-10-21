@@ -15,7 +15,11 @@
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
-<JazzSvelteProvider {sync} AccountSchema={JazzCollabEditorAccount}>
+<JazzSvelteProvider
+	{sync}
+	AccountSchema={JazzCollabEditorAccount}
+	authSecretStorageKey="jazz-svelte-tiptap-collab-editor-auth"
+>
 	<AccountProvider>
 		{@render children?.()}
 	</AccountProvider>
