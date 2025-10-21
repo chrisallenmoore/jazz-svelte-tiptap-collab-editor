@@ -34,7 +34,7 @@
 		bind:value={title}
 		oninput={(e) => updateTitle(e.currentTarget.value)}
 		placeholder="Title..."
-		class="w-full rounded-lg border border-gray-300 px-4 py-2 text-xl font-semibold placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:outline-none"
+		class="w-full rounded-lg border border-gray-300 px-4 py-2 text-2xl placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:outline-none"
 	/>
 </section>
 
