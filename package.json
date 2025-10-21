@@ -27,5 +27,13 @@
 		"tailwindcss": "^4.1.13",
 		"typescript": "^5.9.2",
 		"vite": "^7.1.7"
+	},
+	"dependencies": {
+		"@tiptap/core": "^3.7.2",
+		"@tiptap/extension-bubble-menu": "^3.7.2",
+		"@tiptap/extension-character-count": "^3.7.2",
+		"@tiptap/extension-placeholder": "^3.7.2",
+		"@tiptap/starter-kit": "^3.7.2",
+		"jazz-tools": "^0.18.28"
 	}
 }
