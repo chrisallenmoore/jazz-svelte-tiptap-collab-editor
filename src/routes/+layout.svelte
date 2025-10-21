@@ -8,7 +8,7 @@
 
 	const apiKey = PUBLIC_JAZZ_API_KEY;
 	let { children } = $props();
-	const sync = { peer: `wss://cloud.jazz.tools/?key=${apiKey}` };
+	const sync = { peer: `wss://cloud.jazz.tools/?key=${apiKey}`, when: 'always' };
 </script>
 
 <svelte:head>
