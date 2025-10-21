@@ -58,17 +58,10 @@ export const JazzExampleAccount = co
           ),
           wordCount: 12, // Initialize with word count of the default content
         },
-        
+
+
       });
-    } else {
-      // For existing accounts, ensure papers field exists
-      /*const root = account.root;
-      if (root && !root.papers) {
-        account.$jazz.set('root', {
-          ...root,
-          papers: []
-        });
-      }*/
+
     }
 
     // Initialize public profile if it doesn't exist
