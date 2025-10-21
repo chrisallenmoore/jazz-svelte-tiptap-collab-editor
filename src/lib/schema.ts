@@ -15,7 +15,7 @@ export const CollabDocument = co.map({
  * Contains user's personal data that's not shared publicly.
  * Includes festival management, documents, and collaborative content.
  */
-export const JazzExampleAccountRoot = co.map({
+export const JazzCollabEditorAccountRoot = co.map({
   collabDocument: CollabDocument, // Real-time collaborative document
 });
 
@@ -24,7 +24,7 @@ export const JazzExampleAccountRoot = co.map({
  * Contains user identity information visible to all Jazz users.
  * Made public so other users can see profile information in collaborative spaces.
  */
-export const JazzExampleProfile = co.profile({
+export const JazzCollabEditorProfile = co.profile({
   /**
    * Learn about CoValue field/item types here:
    * https://jazz.tools/docs/react/schemas/covalues#covalue-fielditem-types
@@ -40,10 +40,10 @@ export const JazzExampleProfile = co.profile({
  * Main account schema combining private root data and public profile.
  * Uses migration to initialize default data for new accounts.
  */
-export const JazzExampleAccount = co
+export const JazzCollabEditorAccount = co
   .account({
-    root: JazzExampleAccountRoot,     // Private account data
-    profile: JazzExampleProfile,         // Public profile information
+    root: JazzCollabEditorAccountRoot,     // Private account data
+    profile: JazzCollabEditorProfile,         // Public profile information
   })
   .withMigration((account) => {
     // Initialize private root data if it doesn't exist
@@ -71,7 +71,7 @@ export const JazzExampleAccount = co
 
       account.$jazz.set(
         "profile",
-        JazzExampleProfile.create(
+        JazzCollabEditorProfile.create(
           {
             name: "Anonymous user", // Default anonymous identity
             bio: CoRichText.create(

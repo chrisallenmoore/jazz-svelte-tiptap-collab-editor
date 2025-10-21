@@ -2,12 +2,15 @@
 	import JazzSyncTiptapEditor from '$lib/components/JazzSyncTiptapEditor.svelte';
 	import { getContext } from 'svelte';
 	import type { AccountCoState } from 'jazz-tools/svelte';
-	import type { JazzExampleAccount } from '$lib/schema';
+	import type { JazzCollabEditorAccount } from '$lib/schema';
 
 	// Get the account state from layout context
 	const me =
 		getContext<
-			AccountCoState<typeof JazzExampleAccount, { root: { collabDocument: true }; profile: true }>
+			AccountCoState<
+				typeof JazzCollabEditorAccount,
+				{ root: { collabDocument: true }; profile: true }
+			>
 		>('jazz-account');
 
 	// Reactive title binding

@@ -166,36 +166,6 @@ Demonstrates Jazz's account system with migration for initializing default data.
 - Handling editor lifecycle and cleanup
 - Implementing real-time features like live word count
 
-## Building for Production
-
-```sh
-npm run build
-```
-
-This creates an optimized production build in the `build/` directory. The build process:
-
-- Compiles Svelte components
-- Bundles JavaScript and CSS
-- Optimizes assets for performance
-- Generates static files for deployment
-
-### Deployment
-
-The app can be deployed to any static hosting service or platform that supports SvelteKit:
-
-- **Vercel**: Automatic deployment with `vercel` CLI
-- **Netlify**: Drag-and-drop deployment or CLI
-- **Railway**: Full-stack deployment with database support
-- **Static Hosts**: GitHub Pages, Surge, etc.
-
-For deployment to different platforms, you may need to install appropriate adapters:
-
-```sh
-npm install @sveltejs/adapter-vercel
-# or
-npm install @sveltejs/adapter-netlify
-```
-
 ## Using This Demo as a Starting Point
 
 This project serves as a reference implementation for building collaborative applications with Jazz, SvelteKit, and Tiptap. Here's how to adapt it for your own projects:
@@ -215,37 +185,6 @@ This project serves as a reference implementation for building collaborative app
 - `src/lib/schema.ts`: Data modeling with Jazz schemas
 - `src/routes/+page.svelte`: Page-level integration
 - `src/routes/+layout.svelte`: Account provider setup
-
-## Contributing
-
-We welcome contributions to improve this demo! Here's how you can help:
-
-1. **Fork the repository**
-2. **Create a feature branch**: `git checkout -b feature/your-feature-name`
-3. **Make your changes** and ensure the app still works
-4. **Commit your changes**: `git commit -m 'Add some feature'`
-5. **Push to the branch**: `git push origin feature/your-feature-name`
-6. **Open a Pull Request**
-
-### Development Guidelines
-
-- Follow the existing code style (Prettier formatting)
-- Add TypeScript types for new features
-- Test your changes thoroughly
-- Update documentation as needed
-- Keep the demo focused on showcasing Jazz + SvelteKit + Tiptap integration
-
-## Troubleshooting
-
-### Common Issues
-
-- **Editor not loading**: Ensure Jazz account is properly initialized
-- **Collaboration not working**: Check network connectivity and Jazz configuration
-- **Styling issues**: Verify Tailwind CSS is properly configured
-
-### Debug Mode
-
-Enable debug logging by setting `DEBUG=jazz:*` in your environment variables.
 
 ## License
 
@@ -269,6 +208,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 If you encounter any issues or have questions:
 
-- Open an issue on GitHub
 - Check the documentation for [Jazz](https://jazz.tools/docs), [SvelteKit](https://kit.svelte.dev/docs), and [Tiptap](https://tiptap.dev/docs)
-- Join the community discussions

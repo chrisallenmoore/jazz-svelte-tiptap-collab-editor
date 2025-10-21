@@ -1,12 +1,12 @@
 <script lang="ts">
 	import { AccountCoState } from 'jazz-tools/svelte';
-	import { JazzExampleAccount } from '$lib/schema';
+	import { JazzCollabEditorAccount } from '$lib/schema';
 	import { setContext } from 'svelte';
 
 	let { children } = $props();
 
 	// Create AccountCoState during component initialization when context is available
-	const me = new AccountCoState(JazzExampleAccount, {
+	const me = new AccountCoState(JazzCollabEditorAccount, {
 		resolve: {
 			root: {
 				collabDocument: true
