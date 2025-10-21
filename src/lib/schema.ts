@@ -52,7 +52,7 @@ export const JazzExampleAccount = co
         
         
         collabDocument: {
-          title: 'My Collaborative Rich Text Document',
+          title: '',
           content: CoRichText.create(
             '<p></p>',
           ),

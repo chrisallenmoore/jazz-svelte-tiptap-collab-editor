@@ -147,22 +147,20 @@
 			</button>
 		</div>
 	</div>
-	<div
-		bind:this={element}
-		class="prose prose-2xl min-h-98 w-full max-w-none flex-1 overflow-auto"
-	></div>
+	<div bind:this={element} class="prose prose-2xl w-full max-w-none flex-1 overflow-auto"></div>
 </div>
 
 <style lang="postcss">
 	@reference "tailwindcss";
 	:global(.tiptap.ProseMirror) {
-		@apply h-[400px];
+		@apply h-[380px];
 		@apply w-full;
 		@apply overflow-y-scroll;
-		@apply p-4;
+		@apply px-4;
 		@apply border;
 		@apply rounded-lg;
 		@apply scroll-smooth;
+		@apply border-gray-300;
 	}
 
 	/* Placeholder styling */
