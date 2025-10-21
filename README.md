@@ -1,6 +1,6 @@
 # Collab Editor - Jazz + SvelteKit + Tiptap Demo
 
-A demonstration project showing how to integrate Jazz's real-time collaboration with SvelteKit and Tiptap for building collaborative rich text editors. This app enables multiple users to edit documents simultaneously with live synchronization, rich text formatting, and word count tracking.
+A demonstration project showing how to integrate Jazz's real-time collaboration with SvelteKit and Tiptap for building collaborative rich text editors. This app enables multiple users to edit documents simultaneously with live synchronization, rich text formatting, and word count tracking. Wanna see it in action? Simply open up an additional browser tab and watch the text and word count sync in real-time.
 
 ## What This Demo Shows
 
