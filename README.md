@@ -13,6 +13,7 @@ This project demonstrates how to integrate three powerful technologies:
 ### Key Features Demonstrated
 
 - **Real-time Collaborative Editing**: Multiple users can edit the same document simultaneously
+- **Document Title Editing**: Collaborative title input that syncs across all users in real-time
 - **Rich Text Formatting**: Bold, italic, and strikethrough formatting with bubble menu
 - **Live Word Count**: Automatic word count updates as you type
 - **Jazz Schema Integration**: Using Jazz's CoMap and CoRichText for data modeling
@@ -83,10 +84,11 @@ This will start the development server at `http://localhost:5173`. The app will 
 ## Usage
 
 1. **Open the Application**: Navigate to `http://localhost:5173` in your browser
-2. **Start Editing**: Begin typing in the editor area
-3. **Collaborate**: Share the URL with others to collaborate in real-time
-4. **Formatting**: Select text to see the bubble menu with formatting options
-5. **Word Count**: View the live word count displayed above the editor
+2. **Edit Document Title**: Enter or modify the document title in the input field at the top
+3. **Start Editing**: Begin typing in the editor area
+4. **Auto Sync**: Open up a second browser tab to see real-time synchronization in action
+5. **Formatting**: Select text to see the bubble menu with formatting options
+6. **Word Count**: View the live word count displayed below the editor
 
 ### Key Components
 
