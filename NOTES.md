@@ -24,5 +24,7 @@
 - Example: `const sync = { peer: \`wss://cloud.jazz.tools/?key=${PUBLIC_JAZZ_API_KEY}\` };`.
 - Anonymous auth issues a fresh account per browser profile. Copying the saved auth secret (from localStorage) to another browser is a quick way to force them into the same account for testing.
 - Example: copy the JSON blob from `localStorage["collab-editor-auth"]` in Browser A to Browser B, then refresh.
+- CoRichText sends the entire document only on the first load; subsequent edits replicate as CRDT operations (insert/delete deltas) rather than full text uploads.
+- Example: typing "hello" emits incremental insert ops that other clients apply to produce the same content without refetching the whole document.
 - For real sharing, invite collaborators or otherwise distribute the same account credentials.
 - Example: call `group.createInvite("writer")` and send the `#/invite/...` link to the other user.
