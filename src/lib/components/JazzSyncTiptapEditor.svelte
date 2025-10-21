@@ -147,7 +147,10 @@
 			</button>
 		</div>
 	</div>
-	<div bind:this={element} class="prose prose-2xl w-full max-w-none flex-1 overflow-auto"></div>
+	<div
+		bind:this={element}
+		class="prose prose-2xl w-full max-w-none flex-1 overflow-auto prose-gray"
+	></div>
 </div>
 
 <style lang="postcss">
