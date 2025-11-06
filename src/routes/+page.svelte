@@ -12,18 +12,6 @@
 				{ root: { collabDocument: true }; profile: true }
 			>
 		>('jazz-account');
-
-	// Reactive title binding
-	let title = $state('');
-	$effect(() => {
-		title = me.current?.root?.collabDocument?.title ?? '';
-	});
-
-	function updateTitle(newTitle: string) {
-		if (me.current?.root?.collabDocument) {
-			me.current.root.collabDocument.$jazz.set('title', newTitle);
-		}
-	}
 </script>
 
 <header class="my-4 px-1 text-center">
@@ -34,8 +22,10 @@
 <section class="mx-auto mb-4 max-w-3xl px-1">
 	<input
 		type="text"
-		bind:value={title}
-		oninput={(e) => updateTitle(e.currentTarget.value)}
+		bind:value={
+			() => me.current?.root.collabDocument.title,
+			(v) => me.current?.root.collabDocument.$jazz.set('title', v ?? '')
+		}
 		placeholder="Title..."
 		class="prose w-full rounded-lg border border-gray-300 px-4 py-2 text-2xl prose-gray placeholder:text-gray-400 placeholder:opacity-80 focus:ring-2 focus:ring-black focus:outline-none"
 	/>
