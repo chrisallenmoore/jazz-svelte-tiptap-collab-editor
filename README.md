@@ -6,7 +6,7 @@ A demonstration project showing how to integrate Jazz's real-time collaboration 
 
 This project demonstrates how to integrate three powerful technologies:
 
-- **Jazz**: Real-time collaboration framework for decentralized, peer-to-peer synchronization
+- **Jazz (Classic)**: Real-time collaboration framework for decentralized, peer-to-peer synchronization
 - **SvelteKit**: Modern web framework for building fast, scalable applications
 - **Tiptap**: Headless rich text editor with extensive plugin ecosystem
 
